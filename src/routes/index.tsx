@@ -3,8 +3,8 @@ import Layout from "../layout/Layout";
 import LoginPage from "../pages/login";
 import ContactPage from "../pages/contact";
 import BookPage from "../pages/book";
-import App from "../App";
 import Home from "../layout/Home";
+
 
 const router = createBrowserRouter([
   {
