@@ -1,0 +1,76 @@
+.login-page {
+  background: linear-gradient(136deg, rgb(240, 248, 255) -1%, rgb(219, 238, 255) 85%);
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  flex-direction: column;
+  // border-radius: 0px 20px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+
+
+  &__wrapper {
+    margin-top: 10%;
+    width: 80%;
+    // max-width: 500px;
+    // border: 1px solid #ddd;
+    // padding: 0 0px;
+    // max-width: 600px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgb(255 255 255 / 70%);
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px 9px rgb(0 0 0 / 19%);
+    opacity: 0.96;
+  }
+
+  &__form {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &__sign-up {
+    button {
+      cursor: pointer;
+      display: inline-block;
+      margin-left: 5px;
+      color: #1677ff;
+      background: none;
+      border: none;
+      font-size: inherit;
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+  .login-page {
+    justify-content: center;
+
+    &__wrapper {
+      margin: 0;
+      width: 90%;
+      padding: 10px;
+      max-width: 300px;
+
+    }
+
+    &__title h2 {
+      font-size: 38px;
+      line-height: 40px;
+    }
+
+    &__form {
+      width: 100%;
+      max-width: 290px;
+      margin-bottom: 20px;
+    }
+  }
+
+}
