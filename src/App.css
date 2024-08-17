@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* Typo */
+
+:root {
+  --text-color: rgb(10, 104, 255);
+  --text-color-2: rgb(128, 128, 137);
+  --btn-hover-1: rgba(10, 104, 255, 0.2);
+  --secondary-color: rgb(221, 221, 227);
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+/* Heading */
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+
+
+/* End heading */
+
+/* Text */
+.subtitle1 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.subtitle2 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.body1 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.body2 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+
+.footnote {
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.overline {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+}
+
+/* End Text */
+
+
+
+/* Typo */
+
+/* Button */
+.btn-lg {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.btn-md {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.btn-sm {
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-sub-info {
+  background-color: var(--sub-info);
+  color: white;
+}
+
+/* Custom antd btn */
+.btn.ant-btn {
+  height: 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.btn-cancel.ant-btn {
+  border: none;
+  color: #E74A3B;
+  text-align: left;
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn-cancel.ant-btn span {
+  border-bottom: 2px solid #E74A3B;
+}
+
+.btn-ok .ant-btn {
+  padding: 2px 25px 2px 25px;
+  box-shadow: 0px 1px 3px 1px #00000026;
+  background-color: var(--primary-color);
+}
+
+/* End Custom antd btn */
+
+.text-center {
+  text-align: center;
+}

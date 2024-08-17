@@ -4,13 +4,20 @@ import LoginPage from "../pages/login";
 import ContactPage from "../pages/contact";
 import BookPage from "../pages/book";
 import Home from "../layout/Home";
+import Register from "../pages/register";
+import Error404 from "../pages/error/Error404";
+import Error403 from "../pages/error/Error403";
+import AdminPage from "../pages/admin";
+import { useSelector } from "react-redux";
+import ProtectedRoute from "../components/ProtectedRoute/index.";
+import LayoutAdmin from "../layout/LayoutAdmin";
 
-
+const isAuthenticated = localStorage.getItem('access_token')
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement: <div>404 Not Found</div>,
+    errorElement: <Error404 />,
     children: [
       {
         index: true,
@@ -27,8 +34,26 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: "/admin",
+    element: <LayoutAdmin />,
+    errorElement: <Error404 />,
+    children: [
+      {
+        index: true,
+        element: <ProtectedRoute>
+          <AdminPage />
+        </ProtectedRoute>
+      },
+
+    ],
+  },
+  {
     path: "/login", // Change to absolute path
     element: <LoginPage />,
+  },
+  {
+    path: "register", // Change to absolute path
+    element: <Register />,
   },
 ]);
 
