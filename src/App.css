@@ -17,6 +17,7 @@ body {
 
 html {
   font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 /* Heading */
@@ -71,7 +72,7 @@ h6 {
 .subtitle2 {
   font-size: 14px;
   line-height: 22px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .body1 {
