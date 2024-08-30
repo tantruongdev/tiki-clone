@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import UserTable from '../../components/Admin/User/UserTable';
-
 
 
 const AdminPage: React.FC = () => {
@@ -9,7 +7,7 @@ const AdminPage: React.FC = () => {
     <>
 
       <Link to="/">Home</Link>
-      <UserTable />
+
     </>
   );
 };
